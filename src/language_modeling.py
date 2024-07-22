@@ -150,7 +150,7 @@ def string_to_log_probs(string, probs, offsets):
 
 # In[ ]:
 
-
+############################################################################################# n-gram is down here####################
 def get_ngrams(sentence, n=3):
     words = sentence.split()
     words = ["BOS"]*(n-1) + words + ["EOS"]
@@ -195,6 +195,8 @@ def create_ngram_model(filename, n, outfile):
 n = 1
 #root = create_ngram_model("wikitext-103/wiki.train.tokens", 1, "unigram.pkl")
 root = pickle.load(open("unigram.pkl", "rb"))
+
+############################################################################################# n-gram is up here####################
 
 
 # ### Corpus Statistics
